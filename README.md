@@ -14,7 +14,8 @@ The smallest, fastest, fully-conformant Kubernetes that tracks upstream releases
 #Reference 
 https://microk8s.io/docs/
 
-#Note *microk8s.docker command not found*
+#Note 
+*microk8s.docker command not found*
 
 If you used sudo snap install microk8s --classic command to install. Currently it will download v1.14.0.
 You can check your version using #snap info microk8s
