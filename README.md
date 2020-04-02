@@ -13,3 +13,13 @@ The smallest, fastest, fully-conformant Kubernetes that tracks upstream releases
 
 #Reference 
 https://microk8s.io/docs/
+
+#Note *microk8s.docker command not found*
+
+If you used sudo snap install microk8s --classic command to install. Currently it will download v1.14.0.
+You can check your version using #snap info microk8s
+
+Version 1.14.0 introduced changes in microk8s.daemon-docker and change it to microk8s.daemon-containerd. Due to this change microk8s cannot execute docker commands. Microk8s contains daemon-docker between versions 1.11 and 1.13.
+
+If you are used to use docker install microk8s v1.13 by sudo snap install microk8s --classic --channel=1.13/stable
+
