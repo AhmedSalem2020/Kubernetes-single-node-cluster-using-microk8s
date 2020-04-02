@@ -1,0 +1,16 @@
+sudo apt-get install snapd
+sudo apt-get update
+sudo apt-get install snapd
+sudo snap install microk8s --classic
+sudo snap list
+alias kubectl='microk8s.kubectl'
+kubectl get nodes
+kubectl get namespaces
+kubectl get all --all-namespaces -o wide
+watch microk8s.kubectl get all -o wide
+kubectl run nginx --image nginx
+microk8s.docker images
+which docker
+microk8s.inspect 
+kubectl scale deploy nginx --replicas=2
+
